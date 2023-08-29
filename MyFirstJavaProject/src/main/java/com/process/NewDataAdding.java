@@ -47,7 +47,7 @@ public class NewDataAdding {
 			openSession.getTransaction().commit();
 			List<UserData> list = abc.list();
 			System.out.println(list.size());
-			if(list.size()>0)
+			if(list.size()==1)
 			{
 				return true;
 			}
